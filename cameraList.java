@@ -20,7 +20,7 @@ public class cameraList {
 		cameraArray.add(myCamera3);
 		cameraArray.add(myCamera4);
 		
-		//create instance of scanner
+		
 		String userDecision;
 		System.out.println("1. Show all cameras");
 		System.out.println("2. Add a camera");
@@ -31,10 +31,11 @@ public class cameraList {
 		System.out.println("Enter your selection: ");
 		
 		do {
+		//create instance of scanner
 		Scanner input = new Scanner(System.in);
 		userDecision = input.nextLine();		//user input
 		
-		//add switch statement here
+		//add conditional statements here - probably a switch
 		
 		
 		}while(!userDecision.equals("6")); 		
