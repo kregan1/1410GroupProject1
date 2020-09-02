@@ -6,11 +6,12 @@ package docComments;
  * @author Kerry Regan and Kenyon Gentry
  *
  */
-public class Cameras {
+public class Camera {
 	private String make;
 	private int megapixels;
 	private int weight;
 	final private int id;	//should be int or string?
+	final private int seed = 1111111;
 	private static int count = 0;
 	/**
 	 * Constructor that initializes the fields
@@ -18,11 +19,11 @@ public class Cameras {
 	 * @param megapixels
 	 * @param weight
 	 */
-	public Cameras(String make, int megapixels, int weight) {
+	public Camera(String make, int megapixels, int weight) {
 		this.make = make;
 		this.megapixels = megapixels;
 		this.weight = weight;
-		this.id = 1111111 + count++;	//I dont think this is right, but we can fix it later
+		this.id = seed + count++;	//I dont think this is right, but we can fix it later
 	}
 	/**
 	 * Returns the make of the cameras
@@ -54,7 +55,7 @@ public class Cameras {
 	}
 	@Override
 	public String toString() {
-		return "Cameras [make=" + make + ", megapixels=" + megapixels + ", weight=" + weight + ", id=" + id + "]";
+		return "id: " + id + " " + make + " " + megapixels + " megapixels" + " " + weight + " lbs";
 	}
 	
 	
