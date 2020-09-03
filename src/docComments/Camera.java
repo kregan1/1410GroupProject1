@@ -10,7 +10,7 @@ public class Camera {
 	private String make;
 	private int megapixels;
 	private int weight;
-	final private int id;	//should be int or string?
+	final private int id;	
 	final private int seed = 1111111;
 	private static int count = 0;
 	/**
@@ -23,7 +23,7 @@ public class Camera {
 		this.make = make;
 		this.megapixels = megapixels;
 		this.weight = weight;
-		this.id = seed + count++;	//I dont think this is right, but we can fix it later
+		this.id = seed + count++;
 	}
 	/**
 	 * Returns the make of the cameras
@@ -55,9 +55,6 @@ public class Camera {
 	}
 	@Override
 	public String toString() {
-		return "id: " + id + " " + make + " " + megapixels + " megapixels" + " " + weight + " lbs";
+		return "id: " + id + "\n" + make + " " + megapixels + " megapixels" + " " + weight + " lbs";
 	}
-	
-	
-	
 }
