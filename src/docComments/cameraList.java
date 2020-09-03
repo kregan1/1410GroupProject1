@@ -79,6 +79,16 @@ public class cameraList {
 				
 			
 		case 4: System.out.println("ID to Remove: ");
+				
+				int idRemove = input.nextInt();
+				for(Cameras camera : cameraArray) {
+					if(camera.getId() == idRemove) {
+//					if(idRemove == 1111111) {
+// 						System.out.println(camera);
+						cameraArray.clear();
+// 						camera = null;
+						}					
+					}
 				break;
 				
 		case 5: System.out.println("Number of cameras: " + cameraArray.size());
